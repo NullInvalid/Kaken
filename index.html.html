@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaken - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px auto;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header .title {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #666;
+            font-style: italic;
+            float: right;
+        }
+
+        .description {
+            margin-top: 8px;
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .achievements li:before {
+            content: "▶";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .date {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-picture">
+             <img src="Keken.png" alt="Profile Picture">
+               <!--  👤 -->
+            </div>
+            <h1>Kenrick (Kaken) Labuca</h1>
+            <div class="title">Senior Front-end Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>fdg.kenricklabuca@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <span>linkedin.com/in/johndoe</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Labuca Street, Talisay</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <h2>Professional Summary</h2>
+                <p>Front-end developer specializing in WordPress wizardry and the fine art of breaking forms before fixing them. Passionate about pushing CSS to its limits, installing plugins nobody asked for, and adding at least three extra divs "just in case." Known for solving problems by Googling "WordPress form not working" and then proudly copy-pasting the first Stack Overflow answer.</p>
+            </section>
+
+            <section class="section">
+                <h2>Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Form Overlord (a.k.a. Front-End Developer)</div>
+                    <div class="company">Proweaver Inc.</div>
+                    <div class="date">2024 - Present</div>
+                    <div class="description">
+                        <ul>
+                            <li>Customized contact forms so advanced they no longer actually send emails</li>
+                            <li>Designed pixel-perfect layouts that look flawless… on his laptop only</li>
+                            <li>Implemented 47 different form plugins before realizing one was enough</li>
+                            <li>Debugged forms by repeatedly submitting "asdf@asdf.com"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Junior WordPress Tinkerer</div>
+                    <div class="company">Plugin Palace</div>
+                    <div class="date">2019 - 2024</div>
+                    <div class="description">
+                        <ul>
+                            <li>Achieved mastery of the sacred "Clear Cache" ritual</li>
+                            <li>Edited themes directly in production (may God forgive him)</li>
+                            <li>Learned that "required field" means "users will definitely skip this field"</li>
+                            <li>Accidentally broke WooCommerce checkout during Black Friday — a true coming-of-age moment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Intern / Form Button Clicker</div>
+                    <div class="company">Startup of Questionable Stability</div>
+                    <div class="date">2018 - 2019</div>
+                    <div class="description">
+                        <ul>
+                            <li>Assigned to change button colors 472 times until "it popped"</li>
+                            <li>Spent entire summer trying to center a div</li>
+                            <li>Realized WordPress "shortcodes" are just long codes hiding in disguise</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="job-title">Bachelor of Arts in "Why Is This CSS Not Applying?"</div>
+                    <div class="company">University of Copy-Paste Engineering</div>
+                    <div class="date">2014 - 2018</div>
+                    <div class="description">Relevant Coursework: Inspect Element 101, The Philosophy of Padding vs Margin, Advanced Plugin Conflicts</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">WordPress (and breaking it)</span>
+                    <span class="skill-tag">PHP (aka Pretty Hopeless Programming)</span>
+                    <span class="skill-tag">HTML/CSS (Extra Div Enthusiast)</span>
+                    <span class="skill-tag">JavaScript (Copy-Pasta Edition)</span>
+                    <span class="skill-tag">Elementor</span>
+                    <span class="skill-tag">Contact Form 7</span>
+                    <span class="skill-tag">Gravity Forms</span>
+                    <span class="skill-tag">Ninja Forms</span>
+                    <span class="skill-tag">Git (but only git add . && git commit -m "fix")</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Key Achievements</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>Created a contact form so complicated users gave up and called instead</li>
+                        <li>Reduced spam submissions by adding 9 CAPTCHAs, then forgot the answers himself</li>
+                        <li>Successfully convinced a client that "it's not a bug, it's a WordPress feature"</li>
+                        <li>Survived updating a WordPress plugin without breaking the entire site (once)</li>
+                        <li>Wrote CSS so specific it only applied to one button in one browser on one Tuesday</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>Certified Plugin Installer (unofficial)</li>
+                        <li>Master of Copy-Paste Stack Overflow Solutions</li>
+                        <li>Black Belt in "Have You Tried Turning the Cache Off and On Again?"</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
